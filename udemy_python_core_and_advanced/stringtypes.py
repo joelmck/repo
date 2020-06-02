@@ -49,3 +49,24 @@ d = "I am the best"
 answers = [a, b, c, d]
 for i in answers:
     print("answer = {} and it's a {}".format(i, type(i)))
+
+
+print(d.find("best"))
+
+# assignment 2
+"""define list of countries
+add country at end
+remove by index
+add a country in the middle
+do something similar using a set type
+"""
+
+countries = ["Australia", "New Zealand"]
+countries.append("Papua New Guinea")
+del(countries[1])
+countries.insert(1, "Samoa")
+print(countries)
+s = set(countries)
+s.remove("Samoa")
+s.update(["Tonga"])
+print(s)
